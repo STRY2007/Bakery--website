@@ -1,0 +1,53 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    min-height: 400px; /* Adjust the height as needed */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product h3, .product p {
+    text-align: center;
+}
+
+.product button {
+    margin-top: auto;
+    align-self: center;
+}
+
+/* Responsive Layouts */
+.products, .products_new, .offers-container, .reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .product, .offer-card, .review-card {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .product, .offer-card, .review-card {
+        flex: 1 1 100%;
+    }
+}
+
+/* Responsive Images */
+.custom-image, .offer-image {
+    width: 100%;
+    height: auto;
+}
